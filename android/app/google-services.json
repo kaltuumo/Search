@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "721396045523",
+    "project_id": "insurance-f5db0",
+    "storage_bucket": "insurance-f5db0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721396045523:android:ac374bfe6447e265d76626",
+        "android_client_info": {
+          "package_name": "com.example.insurace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgJjG_yrPdCx8DvfshrMLSZ9s8txRAjhw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
