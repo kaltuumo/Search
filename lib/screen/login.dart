@@ -47,7 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
           children: [
             SizedBox(height: 100),
             Image.asset(
-              'images/download.png',
+              'images/baraka_logo_full.png',
               height: 100,
             ),
             SizedBox(height: 30),
@@ -119,7 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 50,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blueAccent,
+                    backgroundColor: Colors.green,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -153,7 +153,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         },
                   child: _isLoading
                       ? CircularProgressIndicator(
-                          color: Colors.blue,
+                          color: Colors.green,
                         ) // Show spinner while loading
                       : Text(
                           "Login",
@@ -169,7 +169,7 @@ class _LoginScreenState extends State<LoginScreen> {
               },
               child: Text(
                 "Forgot Password?",
-                style: TextStyle(color: Colors.blueAccent),
+                style: TextStyle(color: Colors.green),
               ),
             ),
 
@@ -183,7 +183,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   },
                   child: Text(
                     "Sign Up",
-                    style: TextStyle(color: Colors.blueAccent),
+                    style: TextStyle(color: Colors.green),
                   ),
                 ),
               ],

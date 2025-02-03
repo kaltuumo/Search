@@ -64,8 +64,8 @@ class ListPage extends StatelessWidget {
                         children: [
                           TableRow(
                             decoration: BoxDecoration(
-                              color: Colors.blue.withOpacity(
-                                  0.1), // Background color for the row
+                              color: Colors.green.withOpacity(
+                                  0.4), // Background color for the row
                             ),
                             children: [
                               Padding(
@@ -88,8 +88,8 @@ class ListPage extends StatelessWidget {
                           ),
                           TableRow(
                             decoration: BoxDecoration(
-                              color: Colors.blue.withOpacity(
-                                  0.05), // Lighter background for alternating rows
+                              color: Colors.green.withOpacity(
+                                  0.2), // Lighter background for alternating rows
                             ),
                             children: [
                               Padding(
@@ -112,8 +112,8 @@ class ListPage extends StatelessWidget {
                           ),
                           TableRow(
                             decoration: BoxDecoration(
-                              color: Colors.blue
-                                  .withOpacity(0.1), // Alternate row color
+                              color: Colors.green
+                                  .withOpacity(0.4), // Alternate row color
                             ),
                             children: [
                               Padding(
@@ -136,8 +136,8 @@ class ListPage extends StatelessWidget {
                           ),
                           TableRow(
                             decoration: BoxDecoration(
-                              color: Colors.blue
-                                  .withOpacity(0.05), // Lighter row color
+                              color: Colors.green
+                                  .withOpacity(0.2), // Lighter row color
                             ),
                             children: [
                               Padding(
@@ -160,8 +160,8 @@ class ListPage extends StatelessWidget {
                           ),
                           TableRow(
                             decoration: BoxDecoration(
-                              color: Colors.blue
-                                  .withOpacity(0.1), // Row color change
+                              color: Colors.green
+                                  .withOpacity(0.4), // Row color change
                             ),
                             children: [
                               Padding(

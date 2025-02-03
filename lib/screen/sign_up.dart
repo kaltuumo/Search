@@ -161,7 +161,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         child: Column(
           children: [
             SizedBox(height: 50),
-            Image.asset('images/download.png', height: 100),
+            Image.asset('images/baraka_logo_full.png', height: 100),
             SizedBox(height: 50),
             Padding(
               padding:
@@ -270,9 +270,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 height: 50,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
+                    backgroundColor: Colors.green,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
+                      borderRadius: BorderRadius.circular(12),
                     ),
                   ),
                   onPressed: _isLoading ? null : _signUp,

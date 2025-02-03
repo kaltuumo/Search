@@ -17,8 +17,8 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           children: [
             SizedBox(height: 50),
             Image.asset(
-              'images/download.png', // Ensure this asset is added
-              height: 150,
+              'images/baraka_logo_full.png', // Ensure this asset is added
+              height: 100,
               width: 600,
             ),
             SizedBox(height: 50),
@@ -54,7 +54,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 height: 50,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
+                    backgroundColor: Colors.green,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),

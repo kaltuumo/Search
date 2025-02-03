@@ -79,74 +79,64 @@ class _SearchPageState extends State<SearchPage> {
     }
   }
 
-  // Handle back button press (when user presses the back button)
-  Future<bool> _onWillPop() async {
-    // Navigate back to login screen when back button is pressed
-    Navigator.pushReplacementNamed(context, '/login');
-    return false; // Prevent default back behavior
-  }
-
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: _onWillPop, // Handle back button press
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Search User'),
-          centerTitle: true,
-        ),
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const SizedBox(height: 90),
-              const Center(
-                child: Text(
-                  'Search By ID, Name, or Phone',
-                  style: TextStyle(fontSize: 20, color: Colors.black),
-                ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Search User'),
+        centerTitle: true,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(height: 90),
+            const Center(
+              child: Text(
+                'Search By ID, Name, or Phone',
+                style: TextStyle(fontSize: 20, color: Colors.black),
               ),
-              const SizedBox(height: 20),
-              TextField(
-                controller: _searchController,
-                decoration: const InputDecoration(
-                  labelText: "Enter ID, Name, or Phone",
-                  prefixIcon: Icon(Icons.search),
-                  border: OutlineInputBorder(),
-                ),
+            ),
+            const SizedBox(height: 20),
+            TextField(
+              controller: _searchController,
+              decoration: const InputDecoration(
+                labelText: "Enter ID, Name, or Phone",
+                prefixIcon: Icon(Icons.search),
+                border: OutlineInputBorder(),
               ),
-              const SizedBox(height: 20),
-              SizedBox(
-                width: double.infinity,
-                height: 50,
-                child: ElevatedButton(
-                  onPressed: _validateAndSearch,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                  child: const Text(
-                    "Search",
-                    style: TextStyle(fontSize: 16, color: Colors.white),
+            ),
+            const SizedBox(height: 20),
+            SizedBox(
+              width: double.infinity,
+              height: 50,
+              child: ElevatedButton(
+                onPressed: _validateAndSearch,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
                   ),
                 ),
+                child: const Text(
+                  "Search",
+                  style: TextStyle(fontSize: 16, color: Colors.white),
+                ),
               ),
-              // Display error message centered for empty input or no result
-              if (errorMessage != null)
-                Center(
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 20),
-                    child: Text(
-                      errorMessage!,
-                      style: const TextStyle(fontSize: 16, color: Colors.red),
-                    ),
+            ),
+            // Display error message centered for empty input or no result
+            if (errorMessage != null)
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 20),
+                  child: Text(
+                    errorMessage!,
+                    style: const TextStyle(fontSize: 16, color: Colors.red),
                   ),
                 ),
-            ],
-          ),
+              ),
+          ],
         ),
       ),
     );
